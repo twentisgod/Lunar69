@@ -1,0 +1,685 @@
+-- Made by twent
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local MovementGUI = Instance.new("TextButton")
+local PlayerGUI = Instance.new("TextButton")
+local GameGUI = Instance.new("TextButton")
+local MiscGUI = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local MovementFrame = Instance.new("Frame")
+local BackButton = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local InfJump = Instance.new("TextButton")
+local TP = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local NoSpeed = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local PlayerFrame = Instance.new("Frame")
+local BackButton_2 = Instance.new("TextButton")
+local Title_3 = Instance.new("TextLabel")
+local GoInvisible = Instance.new("TextButton")
+local ReVisable = Instance.new("TextButton")
+local GameFrame = Instance.new("Frame")
+local BackButton_3 = Instance.new("TextButton")
+local Title_4 = Instance.new("TextLabel")
+local Esp = Instance.new("TextButton")
+local MiscFrame = Instance.new("Frame")
+local BackButton_4 = Instance.new("TextButton")
+local Title_5 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(168, 52, 114)
+MainFrame.Position = UDim2.new(0.247999996, 0, 0.228404105, 0)
+MainFrame.Size = UDim2.new(0.410909146, 0, 0.487554908, 0)
+
+Close.Name = "Close"
+Close.Parent = MainFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.91822505, 0, 0.00106886588, 0)
+Close.Size = UDim2.new(0.0814159214, 0, 0.15015015, 0)
+Close.ZIndex = 2
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(130, 27, 130)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0.999640942, 0, 0.151218921, 0)
+Title.Font = Enum.Font.Code
+Title.Text = "TWENT EXPLOTS"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+MovementGUI.Name = "MovementGUI"
+MovementGUI.Parent = MainFrame
+MovementGUI.BackgroundColor3 = Color3.fromRGB(156, 35, 87)
+MovementGUI.Position = UDim2.new(0.322123855, 0, 0.180180177, 0)
+MovementGUI.Size = UDim2.new(0.35398227, 0, 0.15015015, 0)
+MovementGUI.Font = Enum.Font.Code
+MovementGUI.Text = "Movement"
+MovementGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+MovementGUI.TextScaled = true
+MovementGUI.TextSize = 14.000
+MovementGUI.TextWrapped = true
+
+PlayerGUI.Name = "PlayerGUI"
+PlayerGUI.Parent = MainFrame
+PlayerGUI.BackgroundColor3 = Color3.fromRGB(156, 35, 87)
+PlayerGUI.Position = UDim2.new(0.322123855, 0, 0.381381363, 0)
+PlayerGUI.Size = UDim2.new(0.35398227, 0, 0.15015015, 0)
+PlayerGUI.Font = Enum.Font.Code
+PlayerGUI.Text = "Player"
+PlayerGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerGUI.TextScaled = true
+PlayerGUI.TextSize = 14.000
+PlayerGUI.TextWrapped = true
+
+GameGUI.Name = "GameGUI"
+GameGUI.Parent = MainFrame
+GameGUI.BackgroundColor3 = Color3.fromRGB(156, 35, 87)
+GameGUI.Position = UDim2.new(0.322123855, 0, 0.588588595, 0)
+GameGUI.Size = UDim2.new(0.35398227, 0, 0.15015015, 0)
+GameGUI.Font = Enum.Font.Code
+GameGUI.Text = "Game"
+GameGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+GameGUI.TextScaled = true
+GameGUI.TextSize = 14.000
+GameGUI.TextWrapped = true
+
+MiscGUI.Name = "MiscGUI"
+MiscGUI.Parent = MainFrame
+MiscGUI.BackgroundColor3 = Color3.fromRGB(156, 35, 87)
+MiscGUI.Position = UDim2.new(0.322123855, 0, 0.810810804, 0)
+MiscGUI.Size = UDim2.new(0.35398227, 0, 0.15015015, 0)
+MiscGUI.Font = Enum.Font.Code
+MiscGUI.Text = "Misc"
+MiscGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiscGUI.TextScaled = true
+MiscGUI.TextSize = 14.000
+MiscGUI.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(0, 255, 38)
+Open.Position = UDim2.new(0.665398002, 0, 0.728292406, 0)
+Open.Size = UDim2.new(0.0334545448, 0, 0.0732064396, 0)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "O"
+Open.TextColor3 = Color3.fromRGB(255, 247, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+MovementFrame.Name = "MovementFrame"
+MovementFrame.Parent = ScreenGui
+MovementFrame.BackgroundColor3 = Color3.fromRGB(168, 52, 114)
+MovementFrame.Position = UDim2.new(0.247999996, 0, 0.228404105, 0)
+MovementFrame.Size = UDim2.new(0.410909146, 0, 0.487554908, 0)
+MovementFrame.Visible = false
+
+BackButton.Name = "BackButton"
+BackButton.Parent = MovementFrame
+BackButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+BackButton.Position = UDim2.new(0.91822505, 0, 0.00106886588, 0)
+BackButton.Size = UDim2.new(0.0814159214, 0, 0.15015015, 0)
+BackButton.ZIndex = 2
+BackButton.Font = Enum.Font.Code
+BackButton.Text = "O"
+BackButton.TextColor3 = Color3.fromRGB(104, 97, 71)
+BackButton.TextScaled = true
+BackButton.TextSize = 14.000
+BackButton.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = MovementFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(130, 27, 130)
+Title_2.BorderSizePixel = 0
+Title_2.Size = UDim2.new(1, 0, 0.152905196, 0)
+Title_2.Font = Enum.Font.Code
+Title_2.Text = "MOVEMENT"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+InfJump.Name = "InfJump"
+InfJump.Parent = MovementFrame
+InfJump.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+InfJump.Position = UDim2.new(0.0135999918, 0, 0.194512993, 0)
+InfJump.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+InfJump.Font = Enum.Font.Code
+InfJump.Text = "INF JUMP"
+InfJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.TextScaled = true
+InfJump.TextSize = 14.000
+InfJump.TextWrapped = true
+
+TP.Name = "TP"
+TP.Parent = MovementFrame
+TP.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+TP.Position = UDim2.new(0.0148514854, 0, 0.422484457, 0)
+TP.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+TP.Font = Enum.Font.Code
+TP.Text = "Q - TP"
+TP.TextColor3 = Color3.fromRGB(0, 0, 0)
+TP.TextScaled = true
+TP.TextSize = 14.000
+TP.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = MovementFrame
+Speed.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+Speed.Position = UDim2.new(0.645458341, 0, 0.195718661, 0)
+Speed.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+Speed.Font = Enum.Font.Code
+Speed.Text = "SPEED"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+NoSpeed.Name = "NoSpeed"
+NoSpeed.Parent = MovementFrame
+NoSpeed.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+NoSpeed.Position = UDim2.new(0.645458341, 0, 0.422484457, 0)
+NoSpeed.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+NoSpeed.Font = Enum.Font.Code
+NoSpeed.Text = "NO SPEED"
+NoSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoSpeed.TextScaled = true
+NoSpeed.TextSize = 14.000
+NoSpeed.TextWrapped = true
+
+TextLabel.Parent = MovementFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.234828472, 0, 0.814126372, 0)
+TextLabel.Size = UDim2.new(0.527704418, 0, 0.185873613, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Press R to turn inf jump on and off"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = ScreenGui
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(168, 52, 114)
+PlayerFrame.Position = UDim2.new(0.247999996, 0, 0.228404105, 0)
+PlayerFrame.Size = UDim2.new(0.410909146, 0, 0.487554908, 0)
+PlayerFrame.Visible = false
+
+BackButton_2.Name = "BackButton"
+BackButton_2.Parent = PlayerFrame
+BackButton_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+BackButton_2.Position = UDim2.new(0.91822505, 0, 0.00106886588, 0)
+BackButton_2.Size = UDim2.new(0.0814159214, 0, 0.15015015, 0)
+BackButton_2.ZIndex = 2
+BackButton_2.Font = Enum.Font.Code
+BackButton_2.Text = "O"
+BackButton_2.TextColor3 = Color3.fromRGB(104, 97, 71)
+BackButton_2.TextScaled = true
+BackButton_2.TextSize = 14.000
+BackButton_2.TextWrapped = true
+
+Title_3.Name = "Title"
+Title_3.Parent = PlayerFrame
+Title_3.BackgroundColor3 = Color3.fromRGB(130, 27, 130)
+Title_3.BorderSizePixel = 0
+Title_3.Size = UDim2.new(1, 0, 0.152905196, 0)
+Title_3.Font = Enum.Font.Code
+Title_3.Text = "PLAYER"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+GoInvisible.Name = "GoInvisible"
+GoInvisible.Parent = PlayerFrame
+GoInvisible.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+GoInvisible.Position = UDim2.new(0.0148514854, 0, 0.195718661, 0)
+GoInvisible.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+GoInvisible.Font = Enum.Font.Code
+GoInvisible.Text = "Invisible"
+GoInvisible.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoInvisible.TextScaled = true
+GoInvisible.TextSize = 14.000
+GoInvisible.TextWrapped = true
+
+ReVisable.Name = "Re-Visable"
+ReVisable.Parent = PlayerFrame
+ReVisable.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+ReVisable.Position = UDim2.new(0.0148514854, 0, 0.402925849, 0)
+ReVisable.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+ReVisable.Font = Enum.Font.Code
+ReVisable.Text = "Re-Visable"
+ReVisable.TextColor3 = Color3.fromRGB(0, 0, 0)
+ReVisable.TextScaled = true
+ReVisable.TextSize = 14.000
+ReVisable.TextWrapped = true
+
+GameFrame.Name = "GameFrame"
+GameFrame.Parent = ScreenGui
+GameFrame.BackgroundColor3 = Color3.fromRGB(168, 52, 114)
+GameFrame.Position = UDim2.new(0.247999996, 0, 0.228404105, 0)
+GameFrame.Size = UDim2.new(0.410909146, 0, 0.487554908, 0)
+GameFrame.Visible = false
+
+BackButton_3.Name = "BackButton"
+BackButton_3.Parent = GameFrame
+BackButton_3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+BackButton_3.Position = UDim2.new(0.91822505, 0, 0.00106886588, 0)
+BackButton_3.Size = UDim2.new(0.0814159214, 0, 0.15015015, 0)
+BackButton_3.ZIndex = 2
+BackButton_3.Font = Enum.Font.Code
+BackButton_3.Text = "O"
+BackButton_3.TextColor3 = Color3.fromRGB(104, 97, 71)
+BackButton_3.TextScaled = true
+BackButton_3.TextSize = 14.000
+BackButton_3.TextWrapped = true
+
+Title_4.Name = "Title"
+Title_4.Parent = GameFrame
+Title_4.BackgroundColor3 = Color3.fromRGB(130, 27, 130)
+Title_4.BorderSizePixel = 0
+Title_4.Size = UDim2.new(1, 0, 0.152905196, 0)
+Title_4.Font = Enum.Font.Code
+Title_4.Text = "GAME"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+Esp.Name = "Esp"
+Esp.Parent = GameFrame
+Esp.BackgroundColor3 = Color3.fromRGB(137, 50, 161)
+Esp.Position = UDim2.new(0.0148514854, 0, 0.195718661, 0)
+Esp.Size = UDim2.new(0.330033004, 0, 0.152905196, 0)
+Esp.Font = Enum.Font.Code
+Esp.Text = "ESP"
+Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Esp.TextScaled = true
+Esp.TextSize = 14.000
+Esp.TextWrapped = true
+
+MiscFrame.Name = "MiscFrame"
+MiscFrame.Parent = ScreenGui
+MiscFrame.BackgroundColor3 = Color3.fromRGB(168, 52, 114)
+MiscFrame.Position = UDim2.new(0.247999996, 0, 0.228404105, 0)
+MiscFrame.Size = UDim2.new(0.410909146, 0, 0.487554908, 0)
+MiscFrame.Visible = false
+
+BackButton_4.Name = "BackButton"
+BackButton_4.Parent = MiscFrame
+BackButton_4.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+BackButton_4.Position = UDim2.new(0.91822505, 0, 0.00106886588, 0)
+BackButton_4.Size = UDim2.new(0.0814159214, 0, 0.15015015, 0)
+BackButton_4.ZIndex = 2
+BackButton_4.Font = Enum.Font.Code
+BackButton_4.Text = "O"
+BackButton_4.TextColor3 = Color3.fromRGB(104, 97, 71)
+BackButton_4.TextScaled = true
+BackButton_4.TextSize = 14.000
+BackButton_4.TextWrapped = true
+
+Title_5.Name = "Title"
+Title_5.Parent = MiscFrame
+Title_5.BackgroundColor3 = Color3.fromRGB(130, 27, 130)
+Title_5.BorderSizePixel = 0
+Title_5.Size = UDim2.new(1, 0, 0.152905196, 0)
+Title_5.Font = Enum.Font.Code
+Title_5.Text = "MISC"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextScaled = true
+Title_5.TextSize = 14.000
+Title_5.TextWrapped = true
+
+-- Scripts:
+
+local function SFCCPEG_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = false
+	end)
+end
+coroutine.wrap(SFCCPEG_fake_script)()
+local function SEIU_fake_script() -- MovementGUI.LocalScript 
+	local script = Instance.new('LocalScript', MovementGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MovementFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(SEIU_fake_script)()
+local function TTSVIV_fake_script() -- PlayerGUI.LocalScript 
+	local script = Instance.new('LocalScript', PlayerGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.PlayerFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(TTSVIV_fake_script)()
+local function BKPW_fake_script() -- GameGUI.LocalScript 
+	local script = Instance.new('LocalScript', GameGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.GameFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(BKPW_fake_script)()
+local function VBNCW_fake_script() -- MiscGUI.LocalScript 
+	local script = Instance.new('LocalScript', MiscGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MiscFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(VBNCW_fake_script)()
+local function FUBDBYT_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = true
+		wait(1)
+	end)
+end
+coroutine.wrap(FUBDBYT_fake_script)()
+local function DVPSEJX_fake_script() -- BackButton.LocalScript 
+	local script = Instance.new('LocalScript', BackButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(DVPSEJX_fake_script)()
+local function YERZCA_fake_script() -- InfJump.LocalScript 
+	local script = Instance.new('LocalScript', InfJump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Press [R] to turn off and to turn on
+	
+		_G.infinjump = true
+	
+		local Player = game:GetService("Players").LocalPlayer
+		local Mouse = Player:GetMouse()
+		Mouse.KeyDown:connect(function(k)
+			if _G.infinjump then
+				if k:byte() == 32 then
+					Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+					Humanoid:ChangeState("Jumping")
+					wait(0.1)
+					Humanoid:ChangeState("Seated")
+				end
+			end
+		end)
+	
+		local Player = game:GetService("Players").LocalPlayer
+		local Mouse = Player:GetMouse()
+		Mouse.KeyDown:connect(function(k)
+			k = k:lower()
+			if k == "r" then
+				if _G.infinjump == true then
+					_G.infinjump = false
+				else
+					_G.infinjump = true
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(YERZCA_fake_script)()
+local function BVJQQO_fake_script() -- TP.LocalScript 
+	local script = Instance.new('LocalScript', TP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		plr = game.Players.LocalPlayer
+	
+		hum = plr.Character.HumanoidRootPart
+	
+		mouse = plr:GetMouse()
+	
+	
+	
+		mouse.KeyDown:connect(function(key)
+	
+			if key == "q" then
+	
+				if mouse.Target then
+	
+					hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+	
+				end
+	
+			end
+		end)
+	end)
+end
+coroutine.wrap(BVJQQO_fake_script)()
+local function SIGAJA_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.twentisgod.Humanoid.WalkSpeed = 45
+	end)
+end
+coroutine.wrap(SIGAJA_fake_script)()
+local function KGRXE_fake_script() -- NoSpeed.LocalScript 
+	local script = Instance.new('LocalScript', NoSpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.twentisgod.Humanoid.WalkSpeed = 20
+	end)
+end
+coroutine.wrap(KGRXE_fake_script)()
+local function OPYGRC_fake_script() -- BackButton_2.LocalScript 
+	local script = Instance.new('LocalScript', BackButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(OPYGRC_fake_script)()
+local function XSWYOI_fake_script() -- GoInvisible.LocalScript 
+	local script = Instance.new('LocalScript', GoInvisible)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		char = game.Players.LocalPlayer.Character
+		hum = char:FindFirstChildWhichIsA("Humanoid")
+	
+		function scan(p)
+			for i,v in pairs(p:GetChildren()) do
+				if v:IsA("BasePart") then
+					v.Transparency = 1
+				end
+				if v:IsA("Decal") then
+					v.Transparency = 1
+				end
+				scan(v)
+			end
+		end
+	
+		while true do
+			if hum.Health <= 0 then break end
+			scan(char)
+			wait()
+		end
+	
+	end)
+end
+coroutine.wrap(XSWYOI_fake_script)()
+local function LYUPQE_fake_script() -- ReVisable.LocalScript 
+	local script = Instance.new('LocalScript', ReVisable)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		char = game.Players.LocalPlayer.Character
+		hum = char:FindFirstChildWhichIsA("Humanoid")
+	
+		function scan(p)
+			for i,v in pairs(p:GetChildren()) do
+				if v:IsA("BasePart") then
+					v.Transparency = 0
+				end
+				if v:IsA("Decal") then
+					v.Transparency = 0
+				end
+				scan(v)
+			end
+		end
+	
+		while true do
+			if hum.Health <= 0 then break end
+			scan(char)
+			wait()
+		end
+	
+	end)
+end
+coroutine.wrap(LYUPQE_fake_script)()
+local function JJMSOXS_fake_script() -- BackButton_3.LocalScript 
+	local script = Instance.new('LocalScript', BackButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(JJMSOXS_fake_script)()
+local function GVSDN_fake_script() -- Esp.LocalScript 
+	local script = Instance.new('LocalScript', Esp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		ALLYCOLOR = {0,255,255}     --//Color of the ESP  of people on the same team
+		ENEMYCOLOR =  {255,0,0}     --//Color of the ESP  of people on NOT the same team
+		TRANSPARENCY = 0.5          --//Transparency of the ESP
+		HEALTHBAR_ACTIVATED = true  --//Renders the Healthbar
+		--
+		--
+	
+		--                          
+	
+		function createFlex()
+			-- -----------------------------------------------------------------------------------
+			--[VARIABLES] //Changing may result in Errors!
+			players = game:GetService("Players") --//Required for PF
+			faces = {"Front","Back","Bottom","Left","Right","Top"} --//Every possible Enum face
+			currentPlayer = nil --//Used for the Team-Check
+			lplayer = players.LocalPlayer --//The LocalPlayer
+			-- -----------------------------------------------------------------------------------
+			players.PlayerAdded:Connect(function(p)
+				currentPlayer = p
+				p.CharacterAdded:Connect(function(character) --//For when a new Player joins the game 
+					createESP(character)            
+				end)        
+			end)
+			-- -----------------------------------------------------------------------------------
+			function checkPart(obj)  if (obj:IsA("Part") or obj:IsA("MeshPart")) and obj.Name~="HumanoidRootPart" then return true end end --//Check if the Part is suitable 
+			-- -----------------------------------------------------------------------------------
+			function actualESP(obj) 
+	
+				for i=0,5 do
+					surface = Instance.new("SurfaceGui",obj) --//Creates the SurfaceGui
+					surface.Face = Enum.NormalId[faces[i+1]] --//Adjusts the Face and chooses from the face table
+					surface.AlwaysOnTop = true
+	
+					frame = Instance.new("Frame",surface)   --//Creates the viewable Frame
+					frame.Size = UDim2.new(1,0,1,0)
+					frame.BorderSizePixel = 0                                               
+					frame.BackgroundTransparency = TRANSPARENCY
+					if currentPlayer.Team == players.LocalPlayer.Team then --//Checks the Players Team
+						frame.BackgroundColor3 = Color3.new(ALLYCOLOR[1],ALLYCOLOR[2],ALLYCOLOR[3]) --//If in same Team                                         
+					else
+						frame.BackgroundColor3 = Color3.new(ENEMYCOLOR[1],ENEMYCOLOR[2],ENEMYCOLOR[3])  --//If in another Team
+					end
+	
+				end
+			end
+			-- -----------------------------------------------------------------------------------
+			function createHealthbar(hrp) 
+				board =Instance.new("BillboardGui",hrp) --//Creates the BillboardGui with HumanoidRootPart as the Parent
+				board.Name = "total"
+				board.Size = UDim2.new(1,0,1,0)
+				board.StudsOffset = Vector3.new(3,1,0)
+				board.AlwaysOnTop = true
+	
+				bar = Instance.new("Frame",board) --//Creates the red background
+				bar.BackgroundColor3 = Color3.new(255,0,0)
+				bar.BorderSizePixel = 0
+				bar.Size = UDim2.new(0.2,0,4,0)
+				bar.Name = "total2"
+	
+				health = Instance.new("Frame",bar) --//Creates the changing green Frame
+				health.BackgroundColor3 = Color3.new(0,255,0)
+				health.BorderSizePixel = 0
+				health.Size = UDim2.new(1,0,hrp.Parent.Humanoid.Health/100,0)
+				hrp.Parent.Humanoid.Changed:Connect(function(property) --//Triggers when any Property changed
+					hrp.total.total2.Frame.Size = UDim2.new(1,0,hrp.Parent.Humanoid.Health/100,0) --//Adjusts the size of the green Frame                               
+				end)
+			end
+			-- -----------------------------------------------------------------------------------
+			function createESP(c) --//Checks and calls the proper function
+				bugfix = c:WaitForChild("Head") --// *Used so the children of the character arent nil.
+				for i,v in pairs(c:GetChildren()) do
+					if checkPart(v) then
+						actualESP(v)
+					end
+				end
+				if HEALTHBAR_ACTIVATED then --//If the user decided to
+					createHealthbar(c:WaitForChild("HumanoidRootPart")) --//Calls the function of the creation
+				end
+			end
+			-- -----------------------------------------------------------------------------------
+			for i,people in pairs(players:GetChildren())do
+				if people ~= players.LocalPlayer then
+					currentPlayer = people
+					--//Used for Players already in the Game
+					createESP(people.Character)
+					people.CharacterAdded:Connect(function(character)
+						createESP(character)            
+					end)
+				end
+			end
+			-- -----------------------------------------------------------------------------------
+		end --//End of the entire function
+	
+		createFlex() --// Does exactly that :)
+	end)
+end
+coroutine.wrap(GVSDN_fake_script)()
+local function ZTXSOVD_fake_script() -- BackButton_4.LocalScript 
+	local script = Instance.new('LocalScript', BackButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZTXSOVD_fake_script)()

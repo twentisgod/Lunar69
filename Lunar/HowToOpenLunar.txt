@@ -1,0 +1,7 @@
+1: Click on the folder called Lunar
+2: Click on the folder that is called Lunar again - NOT "Lunar.sln"
+3: Click the folder that is called bin
+4: Click on the folder called Debug
+5: Then click on Lunar.exe
+
+Thanks for downloading Lunar!
